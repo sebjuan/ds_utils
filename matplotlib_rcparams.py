@@ -10,6 +10,8 @@ import shutil
 from glob import glob
 from matplotlib import matplotlib_fname
 from matplotlib import get_cachedir
+import matplotlib.pyplot as plt 
+from matplotlib import cycler
 
 def is_valid_url(url: str) -> bool:
   regex = re.compile(
@@ -67,3 +69,20 @@ def install_fonts():
   install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["semibold"], "firacode_semibold")   
   install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["light"], "firacode_light") 
   install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["medium"], "firacode_medium") 
+
+
+
+
+def set_default_rcparams()
+    install_fonts()
+    skyblue = '#87CEEB'
+    red = '#FF7777'
+    violet = '#AA99EE'
+    yellow =  '#FFDD66'
+    colors = cycler('color', [skyblue, red, violet, yellow,'#3388BB' ,'#88BB44', '#FFBBBB'])
+    plt.rc('axes', edgecolor='black', axisbelow=True, grid=True, prop_cycle=colors,linewidth=0.5)
+    plt.rc('font', family='firacode_light' )
+    plt.rc('grid', color='lightgray', linestyle='--')
+    plt.rc('lines', linewidth=1)
+    plt.rc('figure', dpi= 300)
+    plt.rc('legend', frameon=False, facecolor= '#FFFFFF')
