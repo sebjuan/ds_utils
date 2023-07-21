@@ -64,6 +64,6 @@ FIRA_CODE_FONT_URLS = {
 def install_fonts():
   install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["regular"], "firacode_regular")   
   install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["bold"], "firacode_bold")                          
-  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["semi_bold"], "firacode_semibold")   
+  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["semibold"], "firacode_semibold")   
   install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["light"], "firacode_light") 
   install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["medium"], "firacode_medium") 
