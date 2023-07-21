@@ -73,7 +73,7 @@ def install_fonts():
 
 
 
-def set_default_rcparams()
+def set_default_rcparams():
     install_fonts()
     skyblue = '#87CEEB'
     red = '#FF7777'
