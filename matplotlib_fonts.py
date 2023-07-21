@@ -58,11 +58,12 @@ FIRA_CODE_FONT_URLS = {
     "bold": "https://www.dropbox.com/scl/fi/vrc9bdldyqsdfrli6s5mt/FiraCode-Bold.ttf?rlkey=5td077dq51uajc1cecp00qw84&dl=1",
     "light": "https://www.dropbox.com/scl/fi/j7hjgy3u9d85qneebe7ub/FiraCode-Light.ttf?rlkey=4v2914rm6z4ex6v6f1xar0zoy&dl=1",
     "medium": "https://www.dropbox.com/scl/fi/ygxi8r4m1mpurtn4sjjkq/FiraCode-Medium.ttf?rlkey=v29mott5vgbugm4o36l9cx76s&dl=1",
-    "semi_bold": "https://www.dropbox.com/scl/fi/wyro7qus4eyfh2btcywcq/FiraCode-SemiBold.ttf?rlkey=61xciephwwq9jumralub6m1f9&dl=1"
+    "semibold": "https://www.dropbox.com/scl/fi/wyro7qus4eyfh2btcywcq/FiraCode-SemiBold.ttf?rlkey=61xciephwwq9jumralub6m1f9&dl=1"
     }
 
 def install_fonts():
-  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["regular"], "fira_code_regular")   
-  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["bold"], "fira_code_bold")                          
-  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["semi_bold"], "fira_semi_bold")   
-  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["light"], "fira_code_light") 
+  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["regular"], "firacode_regular")   
+  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["bold"], "firacode_bold")                          
+  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["semi_bold"], "firacode_semibold")   
+  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["light"], "firacode_light") 
+  install_matplotlib_font_from_url(FIRA_CODE_FONT_URLS["medium"], "firacode_medium") 
