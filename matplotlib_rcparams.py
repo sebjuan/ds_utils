@@ -48,10 +48,10 @@ def install_matplotlib_font_from_local_file(font_path,matplotlib_fontname ) -> N
 
 def install_matplotlib_font_from_url(font_url: str, local_font_name: str, local_font_folder_path: PosixPath = Path("utils/") / "fonts") -> None:
   local_font_name_with_extension = local_font_name + '.ttf'
-  print(f"{local_font_name_with_extension=}")
+  #print(f"{local_font_name_with_extension=}")
   download_font(font_url, local_font_folder_path, local_font_name_with_extension )
   font_path = str(local_font_folder_path) + '/' + local_font_name_with_extension 
-  print(f"{font_path=}")
+  #print(f"{font_path=}")
   install_matplotlib_font_from_local_file(font_path,local_font_name )
 
 
